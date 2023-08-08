@@ -10,4 +10,4 @@ example: predictor = shade_predictor()
 after you create an instance, any image of teeth can be predicted using predict method of this class
 example: result = predictor.predict(path)
 result is a list of two objects, first object is the class ( 0, 1 or 2) and second object is a numpy array of 3 float32 numbers which are probabilities of each class
-
+Architecture of the model is specified in the training notebook
