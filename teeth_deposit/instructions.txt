@@ -1,1 +1,15 @@
-yeyy!!
+This yolo model identifies teeth deposits
+input images should be only teeth_area, few sample input images are provided in images folder
+deposit_identifier.py contains teeth_deposit_identifier class, which can be used to identify teeth deposits
+method to call:
+  "from deposit_identifier import teeth_deposit_identifier
+  "pred = teeth_deposit_identifier()
+  "res = pred.predict(path , th_1 = 0.6 , th_2 = 0.6 , display=True)"
+path should be path of the image
+th_1 is the bounding boxes threshold
+th_2 is the non-max supression threshold
+if display is set true, then bounding boxes are visualized
+
+About the model:
+it is yolos-tiny model from hugging face transformers library
+link: https://huggingface.co/hustvl/yolos-tiny
